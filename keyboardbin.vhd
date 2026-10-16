@@ -90,5 +90,74 @@ architecture main of keyboardbin is
 			  
 			  (not(Ak08 or Ak04 or Ak02) and Ak16 and Ak01));
 	-- FIM DA PRIMEITA TELA ( A ) --
+	
+	
+	-- PRIMEIRA TELA ( B ) --
+	-- entradas : Bk16, Bk08, Bk04, Bk02, Bk01 --
+	BL0 <= ((not(Bk04) and Bk16 and Bk08) or
+			  (not(Bk08 or Bk04 or Bk02) and Bk01) or
+			  (not(Bk08 or Bk01) and Bk16 and Bk02) or
+			  
+			  (not(Bk16 or Bk08 or Bk02 or Bk01) and Bk04) or
+			  (not(Bk16 or Bk04) and Bk08 and Bk02 and Bk01) or
+			  (not(Bk16 or Bk02) and Bk08 and Bk04 and Bk01) or
+			  
+			  (not(Bk08 or Bk04 or Bk02 or Bk01) and Bk16) or
+			  (not(Bk08) and Bk16 and Bk04 and Bk02 and Bk01));
+			  
+	BL1 <= ((not(Bk16) and Bk08 and Bk02 and Bk01) or
+			  (not(Bk16 or Bk08 or Bk02) and Bk01) or
+			  (not(Bk08) and Bk16 and Bk04 and Bk02) or
+			 
+			  (not(Bk08 or Bk04 or Bk01) and Bk16) or
+			  (not(Bk16 or Bk01) and Bk08 and Bk04) or
+			  (not(Bk16 or Bk08 or Bk01) and Bk04 and Bk02));
+
+	BL2 <= ((not(Bk16 or Bk01) and Bk08 and Bk04) or
+			  (not(Bk08 or Bk01) and Bk16 and Bk04) or
+			  (not(Bk16 or Bk08 or Bk04 or Bk02) and Bk01) or
+			 
+			  (not(Bk16 or Bk08 or Bk04 or Bk01) and Bk02) or
+			  (not(Bk16) and Bk08 and Bk04 and Bk02 and Bk01) or
+			  (not(Bk08 or Bk04 or Bk01) and Bk16 and Bk02) or
+			  (not(Bk04) and Bk16 and Bk08 and Bk02 and Bk01));
+	
+	BL3 <= ((not(Bk16) and Bk04 and Bk02 and Bk01) or
+			  (not(Bk08 or Bk02) and Bk16 and Bk04) or
+			  (not(Bk16 or Bk08 or Bk04 or Bk02) and Bk01) or
+			 
+			  (not(Bk16 or Bk08 or Bk02 or Bk01) and Bk04) or
+			  (not(Bk16 or Bk04 or Bk01) and Bk08 and Bk02) or
+			  (not(Bk08 or Bk04 or Bk02 or Bk01) and Bk16) or
+			  
+			  (not(Bk08 or Bk04) and Bk16 and Bk02 and Bk01) or
+			  (not(Bk08 or Bk01) and Bk16 and Bk04 and Bk02) or
+			  (not(Bk04 or Bk02) and Bk16 and Bk08 and Bk01));
+			  
+	BL4 <= ((not(Bk16 or Bk08) and Bk02 and Bk01) or
+			  (not(Bk16 or Bk08 or Bk02) and Bk04) or
+			  (not(Bk04) and Bk16 and Bk08 and Bk02) or
+			 
+			  (not(Bk16 or Bk04 or Bk02) and Bk08 and Bk01) or
+			  (not(Bk08 or Bk02) and Bk16 and Bk04 and Bk01));
+			  
+	BL5 <= ((not(Bk16 or Bk08 or Bk04) and Bk02) or
+			  (not(Bk08) and Bk16 and Bk04 and Bk02) or
+			  
+			  (not(Bk16 or Bk08) and Bk04 and Bk02 and Bk01) or
+			  (not(Bk16 or Bk02) and Bk08 and Bk04 and Bk01) or
+			  (not(Bk08 or Bk04 or Bk02) and Bk16 and Bk01));
+			  
+	BL6 <= ((not(Bk16 or Bk08 or Bk04 or Bk02)) or
+			  (not(Bk08) and Bk04 and Bk02 and Bk01) or
+			  (not(Bk08 or Bk04) and Bk16 and Bk02) or
+			  
+			  (not(Bk04 or Bk02 or Bk01) and Bk16 and Bk08) or
+			  (not(Bk04) and Bk16 and Bk08 and Bk02 and Bk01) or
+			  (not(Bk16 or Bk02 or Bk01) and Bk08 and Bk04) or
+			  
+			  (not(Bk08 or Bk04 or Bk02) and Bk16 and Bk01));
+	-- FIM DA SEGUNDA TELA ( B ) --
+	
 end architecture main;
 	
