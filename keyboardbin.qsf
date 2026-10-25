@@ -81,5 +81,8 @@ set_location_assignment PIN_A13 -to Bk02
 set_location_assignment PIN_N1 -to Bk04
 set_location_assignment PIN_P1 -to Bk08
 set_global_assignment -name VHDL_FILE LED1port.vhd
+set_global_assignment -name VHDL_FILE LED0port.vhd
+set_global_assignment -name VHDL_FILE LED2port.vhd
+set_global_assignment -name VHDL_FILE LED3port.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Usuario/Desktop/test03/keyboardbin/Waveform.vwf"
